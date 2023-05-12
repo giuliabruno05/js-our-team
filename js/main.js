@@ -37,19 +37,21 @@ const Team = [
 ];
 //MILESTONE 1
  console.log(Team);
- 
+
 //MILESTONE 2
-const item = document.getElementById("ElItemwaney");
+const item = document.getElementById("teamItem");
     for (let i = 0 ; i < Team.length; i++) {
-        let membro = Team[i];
+        let partner = Team[i];
         // console.log(membro);
         
-        for (let chiave in membro) {
-            item.innerHTML += membro[chiave]; 
-            console.log(membro[chiave]);
+        for (let chiaveItem in partner) {
+            item.innerHTML += partner[chiaveItem]; 
+            console.log(partner[chiaveItem]);
         }
+        item.innerHTML +=`<img src="../img/${partner.foto}">`
     }
 
+//MILESTONE 3 
 
 
 
