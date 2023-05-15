@@ -3,10 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
-main{ 
+#container{
+    text-align: center;
+}
+#teamItem{ 
+    display:flex ;
     margin: 0 auto;
+    flex-wrap: wrap;
+    
+
+    
+}
+.card{ 
+    width: calc(100% / 3 - 20px);
+    margin: 20px 10px;
 
 }
-img{
-    width: calc(100% / 3);
+img{ 
+    width: 100%;
 }

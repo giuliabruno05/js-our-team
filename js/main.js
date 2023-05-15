@@ -42,16 +42,24 @@ const Team = [
 const item = document.getElementById("teamItem");
     for (let i = 0 ; i < Team.length; i++) {
         let partner = Team[i];
-        // console.log(membro);
+       
+
+        // mi creo delle costanti per creare le card 
+        const nomePartner = partner.nome ;
+        const ruoloPartner = partner.ruolo;
+        const fotoPartner = partner.foto;
         
-        for (let chiaveItem in partner) {
-            item.innerHTML += partner[chiaveItem]; 
-            console.log(partner[chiaveItem]);
-        }
-        item.innerHTML +=`<img src="../img/${partner.foto}">`
+        const elCard = `<div class="card">
+                        <img src="img/${partner.foto}" class="foto">
+                        <div class="name-partner">${partner.nome}</div>
+                        <div class="name-partner">${partner.ruolo}</div>
+                        </div>`
+                        
+       
+        item.innerHTML += elCard;
     }
 
-//MILESTONE 3 
+
 
 
 
